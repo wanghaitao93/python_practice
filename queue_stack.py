@@ -38,3 +38,28 @@ q_p.put(Job(1))
 
 while(q_p.qsize()):
     print q_p.get().describe
+
+
+# 双端队列
+from collections import deque
+d = deque('bc')
+d.append('d')
+d.appendleft('a')
+print d
+
+d.pop()
+d.popleft()
+print d
+
+d = deque()
+d.append(['aa', 'bb'])
+d += ['cc', 'dd']
+print d
+
+
+
+
+
+
+
+
